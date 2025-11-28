@@ -80,8 +80,6 @@ cd Portfolioo
 ## 👨‍💻 Author
 
 Deepak Patel
-DevOps Engineer
-
 LinkedIn: https://www.linkedin.com/in/deepakpatel-devops/
 
 ## 📜 License
