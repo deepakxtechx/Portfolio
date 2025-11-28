@@ -1,16 +1,89 @@
-# React + Vite
+# Deepak Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive personal portfolio built using **React**, **Vite**, and **Tailwind CSS**.  
+This project showcases my skills, experience, and projects as an aspiring **DevOps Engineer**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+[Live Website](https://deepakxtech.vercel.app/)
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Frontend**
+- React (Vite)
+- JavaScript (ES6+)
+- Tailwind CSS
+- Lucide Icons
+
+**Deployment**
+- Netlify / Vercel  
+- GitHub for version control
+
+---
+
+## 📂 Project Structure
+
+project-folder/
+├── public/
+├── src/
+│ ├── assets/
+│ ├── components/
+│ ├── App.jsx
+│ ├── main.jsx
+├── index.html
+├── package.json
+├── vite.config.js
+└── tailwind.config.js
+
+---
+
+## ✨ Features
+
+- Fully responsive UI  
+- Modern and clean design  
+- Fast Vite build setup  
+- Tailwind-powered styling  
+- Smooth animations  
+- Projects, Experience, Skills sections  
+- Contact section with mail integration  
+- Optimized for SEO & performance  
+
+---
+
+## 📦 Installation & Setup
+
+### Clone the repository:
+
+```bash
+git clone https://github.com/deepakxtechx/Portfolioo.git
+cd Portfolioo
+```
+### Run in development mode:
+
+```npm run dev```
+
+
+### Build for production:
+
+```npm run build```
+
+
+### Preview production build:
+
+```npm run preview```
+
+
+## 👨‍💻 Author
+
+Deepak Patel
+DevOps Engineer
+
+LinkedIn: https://www.linkedin.com/in/deepakpatel-devops/
+
+## 📜 License
+
+This project is open source and available under the MIT License.
