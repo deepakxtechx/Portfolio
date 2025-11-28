@@ -85,6 +85,9 @@ export default function Portfolio() {
             <p className="text-xl text-gray-700 mb-2 font-medium">
               DevOps Engineer
             </p>
+            <p className="text-sm text-gray-600 mb-8 tracking-wide">
+              Build • Ship • Deploy
+            </p>
             <div className="flex justify-center space-x-4 mb-8">
               <a
                 href="https://www.linkedin.com/in/deepakpatel-devops/"
