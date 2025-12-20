@@ -7,7 +7,7 @@ This project showcases my skills, experience, and projects as an aspiring **DevO
 
 ## 🚀 Live Demo
 
-[Live Website](https://deepakxtech.vercel.app/)
+[Live Website](https://deepakx.app/)
 
 ---
 
