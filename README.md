@@ -6,28 +6,30 @@ This project showcases my skills, experience, and projects as an aspiring **DevO
 ---
 
 ## 🚀 Live Demo
-[Live Website](https://deepakxtech.vercel.app/)
 
+[Live Website](https://deepakxtech.vercel.app/)
 
 ---
 
 ## 🛠 Tech Stack
 
 **Frontend**
+
 - React (Vite)
 - JavaScript (ES6+)
 - Tailwind CSS
 - Lucide Icons
 
 **Deployment**
-- Netlify / Vercel  
+
+- Netlify / Vercel
 - GitHub for version control
 
 ---
 
 ## 📂 Project Structure
 
-```project-folder/
+````project-folder/
 ├── public/
 ├── src/
 │ ├── assets/
@@ -43,14 +45,14 @@ This project showcases my skills, experience, and projects as an aspiring **DevO
 
 ## ✨ Features
 
-- Fully responsive UI  
-- Modern and clean design  
-- Fast Vite build setup  
-- Tailwind-powered styling  
-- Smooth animations  
-- Projects, Experience, Skills sections  
-- Contact section with mail integration  
-- Optimized for SEO & performance  
+- Fully responsive UI
+- Modern and clean design
+- Fast Vite build setup
+- Tailwind-powered styling
+- Smooth animations
+- Projects, Experience, Skills sections
+- Contact section with mail integration
+- Optimized for SEO & performance
 
 ---
 
@@ -61,21 +63,19 @@ This project showcases my skills, experience, and projects as an aspiring **DevO
 ```bash
 git clone https://github.com/deepakxtechx/Portfolioo.git
 cd Portfolioo
-```
+````
+
 ### Run in development mode:
 
-```npm run dev```
-
+`npm run dev`
 
 ### Build for production:
 
-```npm run build```
-
+`npm run build`
 
 ### Preview production build:
 
-```npm run preview```
-
+`npm run preview`
 
 ## 👨‍💻 Author
 
