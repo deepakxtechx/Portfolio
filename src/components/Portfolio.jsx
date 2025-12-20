@@ -20,12 +20,24 @@ export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("home");
 
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setActiveSection(sectionId);
-    }
-  };
+  const element = document.getElementById(sectionId);
+  const navbarHeight = 80; // adjust if needed
+
+  if (element) {
+    const y =
+      element.getBoundingClientRect().top +
+      window.pageYOffset -
+      navbarHeight;
+
+    window.scrollTo({
+      top: y,
+      behavior: "smooth",
+    });
+
+    setActiveSection(sectionId);
+  }
+};
+
 
   return (
     <div className="min-h-screen bg-linear-to-br from-blue-50 via-white to-purple-50 text-gray-800 relative">
@@ -971,7 +983,7 @@ export default function Portfolio() {
           </div>
         </section>
 
-      <section id="resume" className="py-20 px-6 scroll-mt-24">
+      <section id="resume" className="py-20 px-6">
   <div className="container mx-auto max-w-4xl">
 
     <div className="text-center mb-12">
@@ -1015,6 +1027,7 @@ export default function Portfolio() {
     </div>
   </div>
 </section>
+
 
 
         <section id="contact" className="py-20 px-6">
