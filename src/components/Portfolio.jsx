@@ -985,20 +985,21 @@ export default function Portfolio() {
 
       <section id="resume" className="py-20 px-6">
   <div className="container mx-auto max-w-4xl">
-
     <div className="text-center mb-12">
       <h2 className="inline-block text-3xl font-bold text-purple-600 relative">
         Resume
+        {/* underline */}
         <span
           className="absolute left-1/2 -bottom-2 h-1 w-16
                      -translate-x-1/2 rounded-full
-                     bg-gradient-to-r from-blue-500 to-purple-600"
+                     bg-gradient-to-r from-blue-500 to-purple-600
+                     transition-all duration-300
+                     group-hover:w-24"
         ></span>
       </h2>
     </div>
 
     <div className="bg-white/70 backdrop-blur-xl rounded-2xl p-8 border border-white/50 shadow-xl">
-
       <div className="text-center mb-6">
         <p className="text-sm text-gray-600 mb-6 font-medium">
           View or download my complete resume
@@ -1010,20 +1011,22 @@ export default function Portfolio() {
                      bg-linear-to-r from-blue-600 to-purple-600
                      text-white text-sm font-semibold rounded-xl
                      hover:from-blue-700 hover:to-purple-700
-                     transition-all shadow-lg"
+                     transition-all shadow-lg hover:shadow-xl hover:shadow-purple-500/30"
         >
+          <Download size={18} className="mr-2" />
           Download Resume
         </a>
       </div>
 
-      <div className="bg-linear-to-br from-blue-50 to-purple-50 border border-blue-200/50 rounded-xl overflow-hidden shadow-inner">
+      {/* Desktop PDF Preview */}
+      <div className="block bg-linear-to-br from-blue-50 to-purple-50 border border-blue-200/50 rounded-xl overflow-hidden shadow-inner">
+
         <iframe
           src={deepakResume}
-          className="w-full h-[450px] md:h-[650px]"
+          className="w-full h-[700px]"
           title="Resume Preview"
         />
       </div>
-
     </div>
   </div>
 </section>
