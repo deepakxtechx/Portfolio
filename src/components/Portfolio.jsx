@@ -273,22 +273,17 @@ export default function Portfolio() {
 
       {/* Paragraph 1 */}
       <p className="text-base text-gray-700 leading-relaxed mb-5">
-        A DevOps Engineer driven by curiosity and a love for automation, scalability, and continuous improvement.
-        My journey into DevOps began 1.5 years ago when I started exploring how modern cloud and automation tools 
-        transform software delivery.
+        DevOps-focused engineer with 1.5+ years of continuous hands-on learning through structured training and project-based implementation. Strong foundation in cloud infrastructure, automation, and CI/CD workflows.
       </p>
 
       {/* Paragraph 2 */}
       <p className="text-base text-gray-700 leading-relaxed mb-5">
-        I completed a 3-month Cloud Training Program, where I gained hands-on experience with multiple AWS services 
-        and DevOps tools, and learned how to manage applications, automate workflows, and implement cloud-native solutions.
+        Completed a 3-month Cloud Training Program with practical exposure to AWS services, Terraform-based infrastructure provisioning, CI/CD pipeline implementation, and containerized deployments using Docker and Kubernetes.
       </p>
 
       {/* Paragraph 3 */}
       <p className="text-base text-gray-700 leading-relaxed">
-        I’ve worked on multiple self-driven projects — setting up CI/CD pipelines, automating infrastructure with 
-        Terraform, containerizing workloads with Docker and Kubernetes, and experimenting with monitoring stacks — 
-        all to deepen my understanding of real-world DevOps practices.
+        Actively build and maintain production-style personal projects focused on infrastructure as code, automated deployments, monitoring, and troubleshooting in Linux environments.
       </p>
 
       {/* Contact Info Cards */}
