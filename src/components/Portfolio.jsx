@@ -161,7 +161,7 @@ export default function Portfolio() {
                   Cloud Platform
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
-                  Hands-on experience with AWS services for cloud-based deployments.
+                  Hands-on experience with AWS and Azure for cloud-based deployments.
                 </p>
               </div>
                
@@ -268,22 +268,21 @@ export default function Portfolio() {
   </h2>
 </div>
 
-
     <div className="bg-white/70 backdrop-blur-xl rounded-2xl p-8 border border-white/50 shadow-xl shadow-blue-100/50">
 
       {/* Paragraph 1 */}
       <p className="text-base text-gray-700 leading-relaxed mb-5">
-        DevOps-focused engineer with 1.5+ years of continuous hands-on learning through structured training and project-based implementation. Strong foundation in cloud infrastructure, automation, and CI/CD workflows.
+        A DevOps-focused engineer with hands-on industry experience managing cloud infrastructure, automating deployments, and helping development teams deliver faster and more reliably.
       </p>
 
       {/* Paragraph 2 */}
       <p className="text-base text-gray-700 leading-relaxed mb-5">
-        Completed a 3-month Cloud Training Program with practical exposure to AWS services, Terraform-based infrastructure provisioning, CI/CD pipeline implementation, and containerized deployments using Docker and Kubernetes.
+        I design and automate cloud infrastructure through containerization, infrastructure as code, and automated pipelines — so every deployment is consistent, secure, and production-ready.
       </p>
 
       {/* Paragraph 3 */}
       <p className="text-base text-gray-700 leading-relaxed">
-        Actively build and maintain production-style personal projects focused on infrastructure as code, automated deployments, monitoring, and troubleshooting in Linux environments.
+        Actively building self-driven projects end-to-end — from provisioning infrastructure to deploying monitored, observable applications that reflect how production systems actually work.
       </p>
 
       {/* Contact Info Cards */}
@@ -340,88 +339,107 @@ export default function Portfolio() {
           </div>
         </section>
 */}
-        <section id="experience" className="py-20 px-6">
+
+
+   <section id="experience" className="py-20 px-6">
   <div className="container mx-auto max-w-4xl">
     <div className="text-center mb-12">
-  <h2 className="inline-block text-3xl font-bold text-purple-600 relative">
-    Experience
+      <h2 className="inline-block text-3xl font-bold text-purple-600 relative">
+        Experience
+        <span
+          className="absolute left-1/2 -bottom-2 h-1 w-16 -translate-x-1/2 rounded-full
+                     bg-gradient-to-r from-blue-500 to-purple-600"
+        ></span>
+      </h2>
+    </div>
 
-    {/* underline */}
-    <span
-      className="absolute left-1/2 -bottom-2 h-1 w-16
-                 -translate-x-1/2 rounded-full
-                 bg-gradient-to-r from-blue-500 to-purple-600
-                 transition-all duration-300
-                 group-hover:w-24"
-    ></span>
-  </h2>
-</div>
-
-
-    {/* outer relative only needed for md+ centered timeline */}
     <div className="relative">
-      {/* CENTER LINE for md+ screens */}
+      {/* CENTER LINE */}
       <div
         className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 -translate-x-1/2 rounded-full
                    bg-gradient-to-b from-blue-400 via-purple-400 to-pink-400"
         aria-hidden="true"
       />
 
-      {/* Single timeline entry */}
-      <div className="mb-12 flex flex-col md:flex-row items-start md:items-center">
-        {/* LEFT COLUMN - on md it's the left side; on mobile it's full width above */}
-        <div className="flex-1 md:w-1/2 md:pr-8 text-left md:text-right">
-          <h3 className="text-lg font-bold text-gray-800 mb-1">AWS Re/start Program Trainee</h3>
-          <p className="text-base text-gray-700 mb-2 font-medium">Magic Bus India Foundation</p>
-          <p className="text-sm text-gray-600 flex items-center md:justify-end">
-            <Calendar size={16} className="mr-1.5 text-blue-600" />
-            June 2024 – Sept 2024
+      {/* ── ENTRY 1 — Aaptatt ── */}
+      <div className="mb-16 flex flex-col md:flex-row items-start md:items-center">
+
+        {/* LEFT */}
+        <div className="flex-1 md:pr-8 text-left md:text-right">
+          <h3 className="text-lg font-bold text-gray-800 mb-1">DevOps Engineer</h3>
+          <p className="text-base font-medium text-purple-600 mb-1">Aaptatt Pvt Ltd</p>
+          <p className="text-sm text-gray-500 flex items-center md:justify-end gap-1 mb-1">
+            <Calendar size={14} className="text-blue-500" />
+            Jan 2026 – Mar 2026
+          </p>
+          <p className="text-sm text-gray-500 flex items-center md:justify-end gap-1">
+            <MapPin size={14} className="text-purple-500" />
+            On-site · Gurugram, Haryana
           </p>
         </div>
 
-        {/* CENTER MARKER (responsive) */}
-        <div className="flex items-start md:items-center">
-          {/* Mobile marker & left vertical accent for mobile: visible on small screens */}
-          <div
-            className="md:hidden flex items-center"
-            aria-hidden="true"
-            style={{ marginRight: '0.5rem' }}
-          >
-            {/* thin vertical accent for mobile entries */}
-            <div className="w-1 h-full bg-gradient-to-b from-blue-400 to-pink-400 rounded" />
-            {/* circular marker */}
-            <div className="w-4 h-4 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 border-4 border-white shadow-lg -translate-y-2" />
-          </div>
-
-          {/* Marker for md+ placed over center line */}
-          <div className="hidden md:flex items-center justify-center w-16">
-            <div className="relative z-10">
-              <div className="w-4 h-4 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full border-4 border-white shadow-lg" />
-            </div>
-          </div>
+        {/* CENTER MARKER */}
+        <div className="hidden md:flex items-center justify-center w-16 z-10">
+          <div className="w-5 h-5 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full
+                          border-4 border-white shadow-lg shadow-purple-200" />
         </div>
 
-        {/* RIGHT COLUMN - on md it's the right side; on mobile it's full width below */}
-        <div className="flex-1 md:w-1/2 md:pl-8 mt-4 md:mt-0">
+        {/* RIGHT */}
+        <div className="flex-1 md:pl-8 mt-4 md:mt-0">
           <ul className="space-y-2.5 text-sm text-gray-700">
-            <li className="flex items-start">
-              <span className="text-blue-500 mr-2 font-bold">▹</span>
-              <span>
-                Completed the AWS re/Start Cloud Computing Programme in collaboration with Accenture and Magic Bus India Foundation!
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-purple-500 mr-2 font-bold">▹</span>
-              <span>
-                Gained hands-on experience with multiple AWS services and DevOps tools, and learned how to manage applications,
-                automate workflows, and implement cloud-native solutions.
-              </span>
-            </li>
+            {[
+              "Implemented Infrastructure as Code using Terraform to automate provisioning and configuration of Azure resources.",
+              "Executed database migration workflows using Azure Data Factory to move on-premises databases to the cloud.",
+              "Collaborated with development teams to streamline deployments and implement DevOps best practices."
+            ].map((point, i) => (
+              <li key={i} className="flex items-start gap-2">
+                <span className="mt-0.5 text-blue-500 font-bold">▹</span>
+                <span>{point}</span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
 
-      {/* Add more entries by duplicating the entry block above */}
+      {/* ── ENTRY 2 — Magic Bus ── */}
+      <div className="mb-12 flex flex-col md:flex-row items-start md:items-center">
+
+        {/* LEFT */}
+        <div className="flex-1 md:pr-8 text-left md:text-right">
+          <h3 className="text-lg font-bold text-gray-800 mb-1">Cloud Intern</h3>
+          <p className="text-base font-medium text-purple-600 mb-1">Magic Bus India Foundation</p>
+          <p className="text-sm text-gray-500 flex items-center md:justify-end gap-1 mb-1">
+            <Calendar size={14} className="text-blue-500" />
+            June 2024 – Sept 2024
+          </p>
+          <p className="text-sm text-gray-500 flex items-center md:justify-end gap-1">
+            <MapPin size={14} className="text-purple-500" />
+            On-site · Thane, Mumbai
+          </p>
+        </div>
+
+        {/* CENTER MARKER */}
+        <div className="hidden md:flex items-center justify-center w-16 z-10">
+          <div className="w-5 h-5 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full
+                          border-4 border-white shadow-lg shadow-pink-200" />
+        </div>
+
+        {/* RIGHT */}
+        <div className="flex-1 md:pl-8 mt-4 md:mt-0">
+          <ul className="space-y-2.5 text-sm text-gray-700">
+            {[
+              "Completed the AWS re/Start Cloud Computing Programme in collaboration with Accenture and Magic Bus India Foundation.",
+              "Gained hands-on experience with AWS services and DevOps tools — managing applications, automating workflows, and implementing cloud-native solutions."
+            ].map((point, i) => (
+              <li key={i} className="flex items-start gap-2">
+                <span className="mt-0.5 text-purple-500 font-bold">▹</span>
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -694,11 +712,11 @@ export default function Portfolio() {
                     <Cloud size={18} className="text-white" />
                   </div>
                   <h3 className="text-sm font-bold text-gray-800">
-                    Cloud Services
+                    Cloud Providers
                   </h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  {["EC2", "VPC", "IAM", "S3", "RDS", "EKS" ].map(
+                  {["AWS", "Azure" ].map(
                     (skill) => (
                       <span
                         key={skill}
@@ -721,7 +739,7 @@ export default function Portfolio() {
                   </h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  {["Docker", "Kubernetes", "Amazon EKS"].map((skill) => (
+                  {["Docker", "Kubernetes"].map((skill) => (
                     <span
                       key={skill}
                       className="px-3 py-1.5 bg-linear-to-r from-purple-100 to-purple-200 border border-purple-300 rounded-lg text-xs text-purple-700 font-medium"
@@ -826,7 +844,7 @@ export default function Portfolio() {
                   </h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  {["Python", "Bash", "YAML"].map((skill) => (
+                  {["Python", "Bash"].map((skill) => (
                     <span
                       key={skill}
                       className="px-3 py-1.5 bg-linear-to-r from-cyan-100 to-cyan-200 border border-cyan-300 rounded-lg text-xs text-cyan-700 font-medium"
