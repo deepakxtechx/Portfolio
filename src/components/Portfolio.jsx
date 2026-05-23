@@ -291,57 +291,9 @@ export default function Portfolio() {
   </div>
 </section>
 
-{/* this is the 1st experience section 
-
- <section id="experience" className="py-20 px-6">
-          <div className="container mx-auto max-w-4xl">
-            <h2 className="text-3xl font-bold mb-12 text-center bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Experience
-            </h2>
-            <div className="relative">
-              <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-linear-to-b from-blue-400 via-purple-400 to-pink-400 rounded-full"></div>
-
-              <div className="mb-8 flex flex-col md:flex-row items-start md:items-center">
-                <div className="flex-1 md:text-right md:pr-8 mb-4 md:mb-0">
-                  <h3 className="text-lg font-bold text-gray-800 mb-1">
-                    AWS Re/start Program Trainee
-                  </h3>
-                  <p className="text-base text-gray-700 mb-2 font-medium">
-                    Magic Bus India Foundation
-                  </p>
-                  <p className="text-sm text-gray-600 flex items-center md:justify-end">
-                    <Calendar size={16} className="mr-1.5 text-blue-600" />
-                    June 2024 – Sept 2024
-                  </p>
-                </div>
-                <div className="relative z-10">
-                  <div className="w-4 h-4 bg-linear-to-br from-blue-500 to-purple-500 rounded-full border-4 border-white shadow-lg"></div>
-                </div>
-                <div className="flex-1 md:pl-8 mt-4 md:mt-0">
-                  <ul className="space-y-2.5 text-sm text-gray-700">
-                    <li className="flex items-start">
-                      <span className="text-blue-500 mr-2 font-bold">▹</span>
-                      <span>
-                        Completed the AWS re/Start Cloud Computing Programme in collaboration with Accenture and Magic Bus India Foundation! 
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="text-purple-500 mr-2 font-bold">▹</span>
-                      <span>
-                        Gained hands-on experience with multiple AWS services and DevOps tools, and learned how to manage applications, 
-                        automate workflows, and implement cloud-native solutions.
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-*/}
 
 
-   <section id="experience" className="py-20 px-6">
+  <section id="experience" className="py-20 px-6">
   <div className="container mx-auto max-w-4xl">
     <div className="text-center mb-12">
       <h2 className="inline-block text-3xl font-bold text-purple-600 relative">
@@ -361,17 +313,78 @@ export default function Portfolio() {
         aria-hidden="true"
       />
 
-      {/* ── ENTRY 1 — Aaptatt ── */}
+      {/* ───────────────────────────────────────────── */}
+      {/* ENTRY 1 — Sprylogic Technologies */}
+      {/* ───────────────────────────────────────────── */}
       <div className="mb-16 flex flex-col md:flex-row items-start md:items-center">
 
         {/* LEFT */}
         <div className="flex-1 md:pr-8 text-left md:text-right">
-          <h3 className="text-lg font-bold text-gray-800 mb-1">DevOps Engineer</h3>
-          <p className="text-base font-medium text-purple-600 mb-1">Aaptatt Pvt Ltd</p>
+          <h3 className="text-lg font-bold text-gray-800 mb-1">
+            Linux Admin & DevOps
+          </h3>
+
+          <p className="text-base font-medium text-purple-600 mb-1">
+            Sprylogic Technologies Ltd.
+          </p>
+
+          <p className="text-sm text-gray-500 flex items-center md:justify-end gap-1 mb-1">
+            <Calendar size={14} className="text-blue-500" />
+            Apr 2026 – Present
+          </p>
+
+          <p className="text-sm text-gray-500 flex items-center md:justify-end gap-1">
+            <MapPin size={14} className="text-purple-500" />
+            On-site · Thane, Mumbai
+          </p>
+        </div>
+
+        {/* CENTER MARKER */}
+        <div className="hidden md:flex items-center justify-center w-16 z-10">
+          <div
+            className="w-5 h-5 bg-gradient-to-br from-pink-500 to-purple-600 rounded-full
+                       border-4 border-white shadow-lg shadow-pink-200"
+          />
+        </div>
+
+        {/* RIGHT */}
+        <div className="flex-1 md:pl-8 mt-4 md:mt-0">
+          <ul className="space-y-2.5 text-sm text-gray-700">
+            {[
+              "Administered Ubuntu, CentOS, and Windows servers for web applications while maintaining stable production environments.",
+              "Managed MySQL databases and developed shell scripts for automated backups, improving operational efficiency.",
+              "Designed and maintained CI/CD pipelines using Jenkins and Docker to streamline deployments.",
+              "Collaborated with IT operations teams to improve infrastructure stability and reduce downtime."
+            ].map((point, i) => (
+              <li key={i} className="flex items-start gap-2">
+                <span className="mt-0.5 text-pink-500 font-bold">▹</span>
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      {/* ───────────────────────────────────────────── */}
+      {/* ENTRY 2 — Aaptatt */}
+      {/* ───────────────────────────────────────────── */}
+      <div className="mb-16 flex flex-col md:flex-row items-start md:items-center">
+
+        {/* LEFT */}
+        <div className="flex-1 md:pr-8 text-left md:text-right">
+          <h3 className="text-lg font-bold text-gray-800 mb-1">
+            DevOps Engineer
+          </h3>
+
+          <p className="text-base font-medium text-purple-600 mb-1">
+            Aaptatt Pvt Ltd
+          </p>
+
           <p className="text-sm text-gray-500 flex items-center md:justify-end gap-1 mb-1">
             <Calendar size={14} className="text-blue-500" />
             Jan 2026 – Mar 2026
           </p>
+
           <p className="text-sm text-gray-500 flex items-center md:justify-end gap-1">
             <MapPin size={14} className="text-purple-500" />
             On-site · Gurugram, Haryana
@@ -380,8 +393,10 @@ export default function Portfolio() {
 
         {/* CENTER MARKER */}
         <div className="hidden md:flex items-center justify-center w-16 z-10">
-          <div className="w-5 h-5 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full
-                          border-4 border-white shadow-lg shadow-purple-200" />
+          <div
+            className="w-5 h-5 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full
+                       border-4 border-white shadow-lg shadow-purple-200"
+          />
         </div>
 
         {/* RIGHT */}
@@ -401,17 +416,26 @@ export default function Portfolio() {
         </div>
       </div>
 
-      {/* ── ENTRY 2 — Magic Bus ── */}
+      {/* ───────────────────────────────────────────── */}
+      {/* ENTRY 3 — Magic Bus */}
+      {/* ───────────────────────────────────────────── */}
       <div className="mb-12 flex flex-col md:flex-row items-start md:items-center">
 
         {/* LEFT */}
         <div className="flex-1 md:pr-8 text-left md:text-right">
-          <h3 className="text-lg font-bold text-gray-800 mb-1">Cloud Intern</h3>
-          <p className="text-base font-medium text-purple-600 mb-1">Magic Bus India Foundation</p>
+          <h3 className="text-lg font-bold text-gray-800 mb-1">
+            Cloud Intern
+          </h3>
+
+          <p className="text-base font-medium text-purple-600 mb-1">
+            Magic Bus India Foundation
+          </p>
+
           <p className="text-sm text-gray-500 flex items-center md:justify-end gap-1 mb-1">
             <Calendar size={14} className="text-blue-500" />
             June 2024 – Sept 2024
           </p>
+
           <p className="text-sm text-gray-500 flex items-center md:justify-end gap-1">
             <MapPin size={14} className="text-purple-500" />
             On-site · Thane, Mumbai
@@ -420,8 +444,10 @@ export default function Portfolio() {
 
         {/* CENTER MARKER */}
         <div className="hidden md:flex items-center justify-center w-16 z-10">
-          <div className="w-5 h-5 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full
-                          border-4 border-white shadow-lg shadow-pink-200" />
+          <div
+            className="w-5 h-5 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full
+                       border-4 border-white shadow-lg shadow-pink-200"
+          />
         </div>
 
         {/* RIGHT */}
@@ -429,7 +455,7 @@ export default function Portfolio() {
           <ul className="space-y-2.5 text-sm text-gray-700">
             {[
               "Completed the AWS re/Start Cloud Computing Programme in collaboration with Accenture and Magic Bus India Foundation.",
-              "Gained hands-on experience with AWS services and DevOps tools — managing applications, automating workflows, and implementing cloud-native solutions."
+              "Gained hands-on experience with AWS services and DevOps tools by managing applications, automating workflows, and implementing cloud-native solutions."
             ].map((point, i) => (
               <li key={i} className="flex items-start gap-2">
                 <span className="mt-0.5 text-purple-500 font-bold">▹</span>
